@@ -107,33 +107,3 @@ Explanation:
 Proposal Creation: DAO members can create proposals by providing a description. Proposals have a voting deadline (endTime).
 Voting: Members can vote on proposals. Each member can only vote once per proposal.
 Proposal Execution: After the voting period ends, any member can execute the proposal if it has enough votes. This triggers any predefined action related to the proposal.
-How to Run
-Clone the repository:
-
-bash
-Copiar código
-git clone https://github.com/your-username/dao-project.git
-cd dao-project
-Install dependencies (if using Truffle or Hardhat):
-
-bash
-Copiar código
-npm install
-Compile the smart contracts:
-
-bash
-Copiar código
-npx hardhat compile
-Deploy the contract: You can deploy to a local blockchain or to a test network (e.g., Ropsten, Rinkeby).
-
-bash
-Copiar código
-npx hardhat run scripts/deploy.js --network ropsten
-Interact with the contract: Use Remix IDE or a frontend (e.g., using Web3.js) to interact with the DAO contract.
-
-Usage
-Create a Proposal: Call the createProposal function, providing a description of the proposed action.
-Vote on a Proposal: Call the vote function, specifying the proposal ID.
-Execute a Proposal: After the voting deadline, call executeProposal to implement the decision if it has enough votes.
-License
-This project is licensed under the MIT License.
